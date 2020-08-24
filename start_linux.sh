@@ -1,8 +1,9 @@
 #!/bin/bash
+LOCALDIR=$(pwd)
 
 qemu-system-x86_64 -enable-kvm -cpu host \
 -bios /usr/share/qemu/bios.bin \
--drive file=/home/intel/linux/linux.qcow2 \
+-drive file=${LOCALDIR}/linux.qcow2 \
 -m 4g \
 -M pc \
 -vga qxl \
