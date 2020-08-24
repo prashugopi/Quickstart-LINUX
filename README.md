@@ -11,6 +11,7 @@ qemu-img create -f qcow2 linux.qcow2 20G
 ```
 
 ## Run installation and start scripts
+Edit LINIMG variable in install_linux.sh to path to 20.04 Desktop Image
 ```
 sudo ./install_linux
 
